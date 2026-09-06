@@ -1,0 +1,14 @@
+{
+  "name": "Club de Fidelidad - Entorno completo",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [5173, 8080, 3307],
+  "portsAttributes": {
+    "5173": { "label": "Frontend", "onAutoForward": "openPreview" },
+    "8080": { "label": "Backend API", "onAutoForward": "notify" },
+    "3307": { "label": "MySQL", "onAutoForward": "silent" }
+  },
+  "postCreateCommand": "docker compose up --build -d"
+}
