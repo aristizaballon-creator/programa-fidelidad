@@ -114,3 +114,15 @@ GET /api/inscripciones
 ## Notas
 
 Validaciones personalizadas (`@EdadMinima`, `@CiudadValida`), manejo global de errores, y frontend optimizado para performance (imágenes WebP, sin librerías de animación pesadas).
+
+## Datos de conexión
+
+| | |
+|---|---|
+| Host MySQL | `localhost` |
+| Puerto MySQL | `3307` |
+| Usuario | `root` |
+| Base de datos | `fidelidad` |
+| Contraseña | ver `.env.example` (ya viene lista, solo copiar a `.env`) |
+| Backend | `http://localhost:8080` |
+| Frontend | `http://localhost:5173` |
