@@ -29,6 +29,8 @@ npm install && npm run dev
 
 **GitHub Codespaces:** botón *Code* → *Codespaces* → *Create codespace on main*. Levanta todo con Docker automáticamente.
 
+Si necesitas reconstruir manualmente dentro del Codespace usa `./scripts/levantar.sh` en vez de `docker compose up --build` — detecta que estás en Codespaces y ajusta la URL del backend solo.
+
 ## Pruebas
 
 ```bash
