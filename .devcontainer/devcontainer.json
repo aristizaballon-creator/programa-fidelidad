@@ -4,7 +4,8 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "moby": false
-    }
+    },
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "forwardPorts": [5173, 8080, 3307],
   "portsAttributes": {
@@ -12,5 +13,6 @@
     "8080": { "label": "Backend API", "onAutoForward": "notify", "visibility": "public" },
     "3307": { "label": "MySQL", "onAutoForward": "silent" }
   },
-  "postCreateCommand": "./scripts/levantar.sh"
+  "postCreateCommand": "./scripts/levantar.sh",
+  "postAttachCommand": "gh codespace ports visibility 8080:public -c \"$CODESPACE_NAME\" 2>/dev/null || true"
 }

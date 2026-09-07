@@ -128,3 +128,5 @@ Validaciones personalizadas (`@EdadMinima`, `@CiudadValida`), manejo global de e
 | Contraseña | ver `.env.example` (ya viene lista, solo copiar a `.env`) |
 | Backend | `http://localhost:8080` |
 | Frontend | `http://localhost:5173` |
+
+**Nota sobre el puerto del backend en Codespaces:** el puerto `8080` debería quedar público automáticamente al abrir el Codespace. Si el formulario no carga los catálogos, ve a la pestaña *Puertos*, y cambia la visibilidad del `8080` a *Public* (clic derecho sobre la fila → *Port Visibility* → *Public*), luego refresca.
