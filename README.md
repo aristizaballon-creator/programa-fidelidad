@@ -31,6 +31,8 @@ npm install && npm run dev
 
 Si necesitas reconstruir manualmente dentro del Codespace usa `./scripts/levantar.sh` en vez de `docker compose up --build` — detecta que estás en Codespaces y ajusta la URL del backend solo.
 
+**Nota sobre el puerto del backend en Codespaces:** el puerto `8080` debería quedar público automáticamente al abrir el Codespace. Si el formulario no carga los catálogos, ve a la pestaña *Puertos*, y cambia la visibilidad del `8080` a *Public* (clic derecho sobre la fila → *Port Visibility* → *Public*), luego refresca.
+
 ## Pruebas
 
 ```bash
@@ -129,4 +131,3 @@ Validaciones personalizadas (`@EdadMinima`, `@CiudadValida`), manejo global de e
 | Backend | `http://localhost:8080` |
 | Frontend | `http://localhost:5173` |
 
-**Nota sobre el puerto del backend en Codespaces:** el puerto `8080` debería quedar público automáticamente al abrir el Codespace. Si el formulario no carga los catálogos, ve a la pestaña *Puertos*, y cambia la visibilidad del `8080` a *Public* (clic derecho sobre la fila → *Port Visibility* → *Public*), luego refresca.
