@@ -6,9 +6,9 @@
   },
   "forwardPorts": [5173, 8080, 3307],
   "portsAttributes": {
-    "5173": { "label": "Frontend", "onAutoForward": "openPreview" },
-    "8080": { "label": "Backend API", "onAutoForward": "notify" },
+    "5173": { "label": "Frontend", "onAutoForward": "openPreview", "visibility": "public" },
+    "8080": { "label": "Backend API", "onAutoForward": "notify", "visibility": "public" },
     "3307": { "label": "MySQL", "onAutoForward": "silent" }
   },
-  "postCreateCommand": "docker compose up --build -d"
+  "postCreateCommand": "./scripts/levantar.sh"
 }
